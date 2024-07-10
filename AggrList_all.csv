@@ -1,0 +1,17 @@
+sample_id,molecule_h5,group,time,rep,virus
+Cal07_bystander_16hr_1,/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/results/cellranger_cal07/Cal07_bystander_16hr_1/outs/molecule_info.h5,bystander,16hr,1,Cal07
+Cal07_bystander_16hr_2,/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/results/cellranger_cal07/Cal07_bystander_16hr_2/outs/molecule_info.h5,bystander,16hr,2,Cal07
+Cal07_bystander_8hr_1,/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/results/cellranger_cal07/Cal07_bystander_8hr_1/outs/molecule_info.h5,bystander,8hr,1,Cal07
+Cal07_bystander_8hr_2,/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/results/cellranger_cal07/Cal07_bystander_8hr_2/outs/molecule_info.h5,bystander,8hr,2,Cal07
+Cal07_infected_16hr_1,/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/results/cellranger_cal07/Cal07_infected_16hr_1/outs/molecule_info.h5,infected,16hr,1,Cal07
+Cal07_infected_16hr_2,/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/results/cellranger_cal07/Cal07_infected_16hr_2/outs/molecule_info.h5,infected,16hr,2,Cal07
+Cal07_infected_8hr,/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/results/cellranger_cal07/Cal07_infected_8hr/outs/molecule_info.h5,infected,8hr,1,Cal07
+Cal07_mock,/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/results/cellranger_cal07/Cal07_mock/outs/molecule_info.h5,mock,0hr,1,Cal07
+Perth09_bystander_16hr_1,/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/results/cellranger_perth09/Perth09_bystander_16hr_1/outs/molecule_info.h5,bystander,16hr,1,Perth09
+Perth09_bystander_16hr_2,/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/results/cellranger_perth09/Perth09_bystander_16hr_2/outs/molecule_info.h5,bystander,16hr,2,Perth09
+Perth09_bystander_8hr_1,/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/results/cellranger_perth09/Perth09_bystander_8hr_1/outs/molecule_info.h5,bystander,8hr,1,Perth09
+Perth09_bystander_8hr_2,/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/results/cellranger_perth09/Perth09_bystander_8hr_2/outs/molecule_info.h5,bystander,8hr,2,Perth09
+Perth09_infected_16hr_1,/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/results/cellranger_perth09/Perth09_infected_16hr_1/outs/molecule_info.h5,infected,16hr,1,Perth09
+Perth09_infected_16hr_2,/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/results/cellranger_perth09/Perth09_infected_16hr_2/outs/molecule_info.h5,infected,16hr,2,Perth09
+Perth09_infected_8hr,/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/results/cellranger_perth09/Perth09_infected_8hr/outs/molecule_info.h5,infected,8hr,1,Perth09
+Perth09_mock,/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/results/cellranger_perth09/Perth09_mock/outs/molecule_info.h5,mock,0hr,1,Perth09

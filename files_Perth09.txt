@@ -1,0 +1,8 @@
+Perth09_bystander_16hr_1	Perth09_bystander_16hr_1	/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/raw_data/Perth09
+Perth09_bystander_16hr_2	Perth09_bystander_16hr_2	/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/raw_data/Perth09
+Perth09_bystander_8hr_1	Perth09_bystander_8hr_1	/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/raw_data/Perth09
+Perth09_bystander_8hr_2	Perth09_bystander_8hr_2	/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/raw_data/Perth09
+Perth09_infected_16hr_1	Perth09_infected_16hr_1	/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/raw_data/Perth09
+Perth09_infected_16hr_2	Perth09_infected_16hr_2	/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/raw_data/Perth09
+Perth09_infected_8hr	Perth09_infected_8hr	/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/raw_data/Perth09
+Perth09_mock	Perth09_mock	/home/labs/cbrooke_lab/Joel/sc_RNA_seq_2020/raw_data/Perth09
