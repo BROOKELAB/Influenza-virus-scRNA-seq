@@ -202,10 +202,26 @@ ggsave("split_UMAP_virus_101823.pdf")
 
 IFNL1_cells <- WhichCells(allcells_postfilt, expression = IFNL1>0)
 
-DimPlot(allcells_postfilt, split.by = 'virus', cells.highlight= IFNL1_cells, cols.highlight = 'red', cols= "grey")
+DimPlot(allcells_postfilt, split.by = 'virus', cells.highlight= IFNL1_cells, cols.highlight = 'red', cols= "grey", pt.size = 2)
 
-ggsave("split_virus_IFNL1_052124.pdf",width = 30, height = 10, units = "cm",dpi = 300)
+ggsave("split_virus_IFNL1_101124.png", width = 30, height = 10, units = "cm", dpi = 600, device = "png", type = "cairo")
 
+#NP/NS and IFNL1 expression
+
+expression_counts <- FetchData(allcells_postfilt, vars = c("IFNL1","NP"), slot = "counts")
+
+expression_counts$virus <- allcells_postfilt@meta.data$virus
+
+NP_INFL1_virus <- ggplot(expression_counts, aes(x = IFNL1, y = NP, color = virus)) +
+  geom_point(size = 1) +
+  xlab("log10(IFNL1 Counts)") +
+  ylab("log10(NP Counts)") +
+  theme_classic() +
+  scale_color_manual(values=c('#E69F00', '#56B4E9'))+
+  scale_x_log10() +  # Set x-axis limits and breaks
+  scale_y_log10()    # Set y-axis limits and breaks
+
+ggsave("IFNL1_NP_101124.svg",plot = NP_INFL1_virus, width = 8, height = 5, units = "cm", dpi = 600, device = "svg")
 
 #look at expression of IFIT3
 
@@ -281,7 +297,22 @@ write.csv(expression_percentages_df, file = "cal07_expression_percentages.csv", 
 expression_percentages_df <- calculate_expression_percentage(Perth09_cells, gene_list)
 write.csv(expression_percentages_df, file = "perth09_expression_percentages.csv", row.names = FALSE)
 
+#Correlation NS1 and IFNL1/IFIT3
 
+data_corr <-read.csv("H3N2_NS1_IFN.csv")
+
+cor_test <- cor.test(data_corr$IFNL1, data_corr$NS1, method = "pearson")
+correlation <- cor_test$estimate
+p_value <- cor_test$p.value
+
+corr_plot <- ggpubr::ggscatter(data_corr, x = "NS1", y = "IFNL1", 
+                          add = "reg.line", add.params = list(color = "red", fill = "lightgray"),
+                          conf.int = TRUE, cor.coef = TRUE, cor.method = 'pearson', size = 1,
+                          xlab = 'Ratio NS1/NP Normalized to ACTB', ylab = 'IFNL1 Fold Change Relative to 2009', 
+                          cor.coeff.args = list(method = "pearson", label.x.npc = "middle", label.y.npc = "top"))
+
+ggsave("correlation_H3_IFNL1_101124.svg",plot = corr_plot, width = 8, height = 5, units = "cm", dpi = 600, device = "svg",
+       path = "")
 
 sessionInfo()
 
