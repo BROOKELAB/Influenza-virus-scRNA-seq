@@ -2,6 +2,8 @@
 Gene expression analysis of scRNA-seq libraries from A549s infected with H1N1 or H3N2.
 ### 10X Chromium single cell scripts
 
+Scripts associated with [Seasonal influenza a virus lineages exhibit divergent abilities to antagonize interferon induction and signaling](https://doi.org/10.1371/journal.ppat.1012727), Rivera-Cardona et al. (2024). 
+
 ## Analysis Overview:
 The scripts used in this analysis are specifically to look for differences in the percentage of
 infected cells expressing selected genes of interest between H1N1 and H3N2. Scripts required for
